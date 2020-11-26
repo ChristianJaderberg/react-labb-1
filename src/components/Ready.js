@@ -1,12 +1,12 @@
 import React from 'react'
 import logo from './../logo.svg';
 
-function Ready() {
+function Ready(props) {
     return (
       <div>
             <img src={logo} className="App-logo" alt="logo" />
             <p>
-                Ready!
+                Get ready, {props.name}!
             </p>
             <a
                 className="App-link"

@@ -1,8 +1,8 @@
 import React from 'react'
 
-function Set() {
+function Set(props) {
     return (
-      <div>Set!</div>
+      <div>Get set, {props.name}!</div>
     )
 }
   

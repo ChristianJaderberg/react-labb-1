@@ -1,8 +1,8 @@
 import React from 'react'
 
-function Go() {
+function Go(props) {
     return (
-      <div>Go!</div>
+      <div>And go, {props.name}!</div>
     )
 }
   
