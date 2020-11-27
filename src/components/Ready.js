@@ -1,21 +1,12 @@
 import React from 'react'
-import logo from './../logo.svg';
 
 function Ready(props) {
     return (
       <div>
-            <img src={logo} className="App-logo" alt="logo" />
-            <p>
-                Get ready, {props.name}!
-            </p>
-            <a
-                className="App-link"
-                href="https://reactjs.org"
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-            Learn React
-            </a>
+            <h2>Get ready, {props.name}!</h2>
+            {props.name.length < 5 && <p>Your name has less than 5 characters!</p>}
+            {props.name.length == 5 && <p>Your name has exactly 5 characters!</p>}
+            {props.name.length > 5 && <p>Wow, your name has more than 5 characters!!</p>}
       </div>
     )
 }
