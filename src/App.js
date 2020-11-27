@@ -28,21 +28,11 @@ function App() {
             </ul>
           </nav>
 
-          <label>
-            What is your name? 
-          <input
-            onChange={(event) => setName(event.target.value)}
-            value={name}
-          />
-          </label>
+          <p>What is your name? </p>
+          <input onChange={(event) => setName(event.target.value)} value={name}/>
 
-          <label>
-            What is your lucky number? 
-          <input
-            onChange={(event) => setLuckyNumber(event.target.value)}
-            value={luckyNumber}
-          />
-          </label>
+          <p>What is your lucky number? </p>
+          <input onChange={(event) => setLuckyNumber(event.target.value)} value={luckyNumber}/>
 
           <Switch>
             <Route exact path="/"><Ready name={name} luckyNumber={luckyNumber} /></Route>
